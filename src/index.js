@@ -5,6 +5,7 @@ import GymApp from "./GymApp";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/js/all.js";
 import { BrowserRouter } from "react-router-dom";
+import GymHeader from "./components/include/GymHeader";
 // document.querySelector("#root")
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const a = 2;
@@ -12,6 +13,7 @@ root.render(
   <>
     <BrowserRouter>
       <GymApp a={a} />
+      <GymHeader/>
     </BrowserRouter>
     {/* myReact 화살표함수 실행한다. 좌중괄호 우중괄호 안은 자바스크립트
      함수의 이름으로 태그를 선언한다. () 묶는다.->
