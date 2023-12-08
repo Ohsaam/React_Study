@@ -1,38 +1,44 @@
-import React from 'react'
-
+import React from "react";
+import { Link } from "react-router-dom";
 function GymHeader() {
   return (
     <>
-    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <nav className="navbar navbar-expand-sm bg-light navbar-light">
+        <div className="container-fluid">
+          <Link to="/" className="nav-link">
+            독서모임
+          </Link>
+          <div>
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link active" href="#">
+                  로그인
+                </a>
+              </li>
 
-<div class="container-fluid">
-    <a class = "navbar-brand" href = "">독서모임</a>
-    <div>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">로그인</a>
-        </li>
+              <li className="nav-item">
+                <a className="nav-link active" href="/notice/noticeList.gd">
+                  공지사항
+                </a>
+              </li>
 
-        <li class="nav-item">
-          <a class="nav-link active" href="/notice/noticeList.gd">공지사항</a>
-        </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  회원관리
+                </a>
+              </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">회원관리</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">게시판</a>
-        </li>
-			
-      </ul>
-  </div>
-</div>
-	
-
-</nav>
-</>
-  )
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  게시판
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </>
+  );
 }
 
-export default GymHeader
+export default GymHeader;

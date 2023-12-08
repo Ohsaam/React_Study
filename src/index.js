@@ -13,7 +13,6 @@ root.render(
   <>
     <BrowserRouter>
       <GymApp a={a} />
-      <GymHeader/>
     </BrowserRouter>
     {/* myReact 화살표함수 실행한다. 좌중괄호 우중괄호 안은 자바스크립트
      함수의 이름으로 태그를 선언한다. () 묶는다.->

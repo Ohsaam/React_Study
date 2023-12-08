@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import GymHeader from "../include/GymHeader";
+import GymFooter from "../include/GymFooter";
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <div>
+      <GymHeader />
+      <GymFooter />
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;
